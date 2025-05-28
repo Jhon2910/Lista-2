@@ -1,16 +1,16 @@
 import java.util.Scanner;
-public class jonathan3 {
+class jonathan3 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Digíte o primeiro valor:");
-        int num1 = (int) teclado.nextInt();
-        System.out.println("Digíte o primeiro valor:");
-        int num2 = (int) teclado.nextInt();
+        double num1 = teclado.nextDouble();
+        System.out.println("Digíte o segundo valor:");
+        double num2 = teclado.nextDouble();
         System.out.println("Digíte o terceiro valor:");
-        int antecessor = num1 + num2 ;
-        int sucessor = num1 + 1;
-        System.out.println("sucessor:" +sucessor);
-        System.out.println("antecessor:" +antecessor);
-    teclado.close();
-        }
+        double num3 = teclado.nextDouble();
+        double mult = num1 * num2 ;
+        double div = mult/num3;
+        System.out.printf("Resultado:%2.f%",div);
+        teclado.close();
     }
+}
