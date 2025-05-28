@@ -8,7 +8,7 @@ class jonathan9 {
 
       int diagonais = lados * (lados - 3)/2 ;
 
-      System.out.printf("O numero de diagonais e: %d", diagonais);
+      System.out.printf("O número de diagonais é: %d", diagonais);
       teclado.close();
    }
 }
