@@ -5,9 +5,9 @@ import java.util.Scanner;
             System.out.print("Ano : ");
             
             int Ano = teclado.nextInt();
-            int CopasRealizadas = ((Ano - 1930)/4)+1-2;
+            int CopasRealizadas = ((Ano - 1930)/4)+1;
             
             System.out.printf("O total de copas do mundo realizadas neste periodo e de : %d",CopasRealizadas);
-            teclado.close();
+            teclado.close(); //ainda nao acabei
         }
     }
