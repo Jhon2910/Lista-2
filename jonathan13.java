@@ -1,24 +1,29 @@
 import java.util.Scanner;
-class jonathan13 {
+
+public class jonathan13 {
     public static void main(String[] args) {
+
+        int AnoDeInicio = 1930;
+        int AnoDoCancelamento1 = 1942;
+        int AnoDoCancelamento2 = 1946;
+
         Scanner teclado = new Scanner(System.in);
-        System.out.print("Digite o ano : ");
+        System.out.print("Digite o ano atual: ");
+        int anoAtual = teclado.nextInt();
+        int numeroDeCopas = (anoAtual-AnoDeInicio)/4+1;
 
-        int Ano = teclado.nextInt();
-
-        if (Ano < 1930 || Ano > 2025){
-            System.out.print("Digite um ano entre 1930 e 2025! ");
+        if(anoAtual < AnoDeInicio){
+            System.out.print("Nao ouve Copa do Mundo neste periodo");
+        }
+        else if(anoAtual >= AnoDoCancelamento2){
+            System.out.printf("Até o ano de %d foram realzadas %d Copas do Mundo.", anoAtual, numeroDeCopas - 2);
+        }
+        else if (anoAtual >= AnoDoCancelamento1) {
+            System.out.printf("Até o ano de %d foram realzadas %d Copas do Mundo.", anoAtual, numeroDeCopas - 1);
         }
         else {
-            int CopasRealizadas = ((Ano - 1930)/4);
-
-        if (Ano >= 1942 || Ano <= 1946){
-            System.out.print(CopasRealizadas - 1);
+            System.out.printf("Até o ano de %d foram realzadas %d Copas do Mundo.", anoAtual, numeroDeCopas);
         }
-        else{
-            System.out.printf("Foram realizadas %d copas do mundo",CopasRealizadas );//nao terminei
-            }
-        }
+        teclado.close();
     }
-
 }
