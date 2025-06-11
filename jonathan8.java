@@ -1,7 +1,9 @@
 import java.util.Scanner;
+
 class jonathan8 {
    public static void main(String[] args) {
       Scanner teclado = new Scanner(System.in);
+      
       System.out.print("Digite o valor da base maior (em metros): ");
       double baseM = teclado.nextDouble();
 
@@ -18,6 +20,7 @@ class jonathan8 {
       double preco = area * ValormetroQuadrado;
 
       System.out.printf("O valor da area é : %.2fm²%nO valor médio de venda é : R$%.2f", area,preco);
+      
       teclado.close();
    }
 }
