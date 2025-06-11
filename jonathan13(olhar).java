@@ -2,14 +2,15 @@ import java.util.Scanner;
 
 public class jonathan13 {
     public static void main(String[] args) {
-
+        Scanner teclado = new Scanner(System.in);
+        
         int AnoDeInicio = 1930;
         int AnoDoCancelamento1 = 1942;
         int AnoDoCancelamento2 = 1946;
-
-        Scanner teclado = new Scanner(System.in);
+        
         System.out.print("Digite o ano atual: ");
         int anoAtual = teclado.nextInt();
+        
         int numeroDeCopas = (anoAtual-AnoDeInicio)/4+1;
 
         if(anoAtual < AnoDeInicio){
