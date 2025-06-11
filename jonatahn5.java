@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 class jonathan5{
    public static void main(String[] args) {
-      Scanner teclado = new Scanner(System.in)
-         ;
+      Scanner teclado = new Scanner(System.in);
+      
       System.out.print("Digite seu salário em (R$):");
       double salario = teclado.nextDouble();
       
